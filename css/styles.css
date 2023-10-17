@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: url('/img/bg.jpg');
+    background-size: cover;
+}
+
+.main-container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.nave {
+    position: absolute;
+    animation: fall 4s linear;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+
+    }
+
+    from {
+        transform: translateY(-1vh);
+    }
+}
